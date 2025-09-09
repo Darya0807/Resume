@@ -1,0 +1,31 @@
+:root {
+  --bg-color: #E9F0F9;
+  --section-bg-color: #ffffff;
+  --skill-color: #CBCAED;
+  --text-color: #000;
+  --button-bg-color: #ffffff;
+  --button-text-color: #6750A4;
+  --button-active-shadow-color-1: rgba(0, 0, 0, 0.2) ; 
+  --button-active-shadow-color-2: rgba(255, 255, 255, 0.7);
+  --link-text-color: #6750A4;
+  --border-color: #6750A4;
+  --skill-bg-color: #CBCAED;
+  --icon-color: #6750A4;
+  --close-button: #000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #2A2B2B;
+  --section-bg-color: #1F1F20;
+  --skill-color: #D54A4A;
+  --text-color: #fff;
+  --button-bg-color: #1F1F20;
+  --button-text-color: #D54A4A;
+  --button-active-shadow-color-1: rgba(205, 112, 112, 0.2) ; 
+  --button-active-shadow-color-2: rgba(31, 31, 32, 0.7);
+  --link-text-color: #D54A4A;
+  --border-color: #D54A4A;
+  --skill-bg-color: #D54A4A;
+  --icon-color: #D54A4A; 
+  --close-button: #fff;
+}

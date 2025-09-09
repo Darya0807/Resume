@@ -1,0 +1,283 @@
+body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 30px 15px 30px 30px;
+  background-color: var(--bg-color);
+}
+
+.text {
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.section {
+  border-radius: 15px;
+  padding: 20px;
+  background-color: var(--section-bg-color);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.profile__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile__photo {
+  width: 140px;
+  height: 140px;
+  border: var(--border-color) solid 3px;
+  border-radius: 70px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.title {
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.34;
+  text-transform: uppercase;
+}
+
+.name {
+  text-transform: none;
+}
+
+.button {
+  min-height: 40px;
+  border: var(--border-color) solid 3px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow:
+    3px 3px 5px var(--button-active-shadow-color-1),
+    -3px -3px 5px var(--button-active-shadow-color-2);
+  color: var(--button-text-color);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--button-bg-color);
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow:
+    inset 2px 2px 3px var(--button-active-shadow-color-1),
+    inset -2px -2px 3px var(--button-active-shadow-color-2);
+}
+
+.profile__contacts-info {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.icon {
+  color: var(--icon-color);
+}
+
+.link {
+  grid-column: 2;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--link-text-color);
+}
+
+.detailed-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  max-width: fit-content;
+}
+
+.detailed-info__about,
+.detailed-info__skills,
+.detailed-info__background,
+.detailed-info__university,
+.detailed-info__additional {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--skill-bg-color);
+}
+
+.organization {
+  display: flex;
+  flex-direction: column;
+}
+
+.organization h3 {
+  font-size: 20px;
+}
+
+.organization span:nth-of-type(2) {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.special-info {
+  opacity: 60%;
+}
+
+.theme {
+  width: 32px;
+  height: 32px;
+  border: none;
+  padding: 4px;
+  background-color: inherit;
+}
+
+.theme:hover {
+  cursor: pointer;
+}
+
+.pop-up {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100vw;
+  height: 135px;
+  border: var(--border-color) solid 3px;
+  padding: 10px 30px 10px 65px;
+  background-color: var(--section-bg-color);
+}
+
+.send-massege {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.close-button {
+  color: var(--close-button);
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: var(--border-color);
+}
+
+.apps {
+  display: flex;
+  gap: 10px;
+}
+
+@media (width >=1200px) {
+  body {
+    display: flex;
+    gap: 10px;
+    margin: 50px 250px 50px 300px;
+  }
+
+  .text {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  .resume {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile {
+    max-width: fit-content;
+    padding: 10px;
+  }
+
+  .detailed-info {
+    padding: 10px;
+  }
+
+  .detailed-info__about,
+  .detailed-info__skills,
+  .detailed-info__background,
+  .detailed-info__university,
+  .detailed-info__additional {
+    gap: 30px;
+  }
+
+  .detailed-info .section {
+    padding: 30px;
+  }
+
+  .workplace h3 {
+    font-size: 24px;
+  }
+
+  .workplace span:nth-of-type(2) {
+    font-size: 20px;
+  }
+
+  .theme {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+
+  .theme__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pop-up {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    width: 800px;
+    height: 135px;
+    border: var(--border-color) solid 3px;
+    background-color: var(--section-bg-color);
+    transform: translate(-50%, -50%);
+  }
+}
